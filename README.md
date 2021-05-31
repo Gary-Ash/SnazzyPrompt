@@ -2,7 +2,7 @@
 
 This repository contains my snazzy [Powerline](https://powerline.readthedocs.io/en/latest/index.html) style terminal prompt
 
-**Options Environment Variable:**  \
+**Options Environment Variable:**. 
 SNAZZY_PROMPT=<Segment Name>,Foreground color,Background color[,Alternate Foreground color,Alternate Background color];<next segment spec>
 
 Segment Names:
@@ -13,4 +13,4 @@ Segment Names:
 *  *user* user name
 
 Note: libgit2 is required.I used [homebrew](https://brew.sh) to install it *brew install libgit2*  \
-![Screen Shot](https://github.com/Gary-Ash/SnazzyPrompt/raw/master/documentation/ScreenShot.png)
+![Screen Shot](documentation/ScreenShot.png)
