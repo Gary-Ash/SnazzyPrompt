@@ -12,5 +12,27 @@ Segment Names:
 *  *machine* machine/host name
 *  *user* user name
 
-Note: libgit2 is required.I used [homebrew](https://brew.sh) to install it *brew install libgit2*  \
+```zsh
+#*****************************************************************************************
+# prompt setup
+#*****************************************************************************************
+snazzy_prompt_precmd() {
+    export SNAZZY_PROMPT="cwd,235,179,235,166;git,235,219,235,40;error,235,166"
+    PS1="$(/usr/local/bin/SnazzyPrompt --error $?)"
+}
+
+install_snazzy_prompt_precmd() {
+  for s in "${precmd_functions[@]}"; do
+    if [ "$s" = "snazzy_prompt_precmd" ]; then
+      return
+    fi
+  done
+  precmd_functions+=(snazzy_prompt_precmd)
+}
+install_snazzy_prompt_precmd  
+...  
+  
+  
+Note: libgit2 is required.I used [homebrew](https://brew.sh) to install it *brew install libgit2*  
+
 ![Screen Shot](documentation/ScreenShot.png)
