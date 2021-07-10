@@ -1,5 +1,8 @@
 ## Snazzy Powerline Style Terminal Prompt
 
+![Screen Shot](documentation/ScreenShot.png)
+
+
 This repository contains my snazzy [Powerline](https://powerline.readthedocs.io/en/latest/index.html) style terminal prompt
 
 **Options Environment Variable:**. 
@@ -35,4 +38,4 @@ install_snazzy_prompt_precmd
   
 Note: libgit2 is required.I used [homebrew](https://brew.sh) to install it *brew install libgit2*  
 
-![Screen Shot](documentation/ScreenShot.png)
+You build the the executable with XCode project file
