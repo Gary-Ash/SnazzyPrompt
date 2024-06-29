@@ -48,11 +48,11 @@
 		AB2EE08522F4EB2900498720 /* segmentUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmentUser.cpp; sourceTree = "<group>"; };
 		AB2EE08622F4EB2900498720 /* segmentCwd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmentCwd.cpp; sourceTree = "<group>"; };
 		AB2EE08E22F4EB7000498720 /* libtermcap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libtermcap.tbd; path = usr/lib/libtermcap.tbd; sourceTree = SDKROOT; };
-		AB2EE09022F4ECC200498720 /* LICENSE.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
-		AB2EE09122F4ECC200498720 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AB4AB7FA284E56A40081CAC2 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = ../../../../../opt/homebrew/Cellar/libgit2/1.4.3/lib/libgit2.a; sourceTree = "<group>"; };
 		AB4AB7FB284E57530081CAC2 /* libgit2.1.4.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgit2.1.4.3.dylib; path = ../../../../../opt/homebrew/Cellar/libgit2/1.4.3/lib/libgit2.1.4.3.dylib; sourceTree = "<group>"; };
 		AB7676992A328E4D00857DF8 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = ../../../../../opt/homebrew/Cellar/libgit2/1.6.4/lib/libgit2.a; sourceTree = "<group>"; };
+		ABBB21BC2C0952E80019AA9C /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		ABBB21BD2C0952E80019AA9C /* LICENSE.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.markdown; sourceTree = "<group>"; };
 		ABE67A2823B1A89D004BAB20 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		ABE67A2A23B1A8BD004BAB20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -80,8 +80,8 @@
 				AB2EE07822F4EA6000498720 /* SnazzyPrompt */,
 				AB2EE07722F4EA6000498720 /* Products */,
 				AB2EE08D22F4EB7000498720 /* Frameworks */,
-				AB2EE09122F4ECC200498720 /* README.md */,
-				AB2EE09022F4ECC200498720 /* LICENSE.md */,
+				ABBB21BD2C0952E80019AA9C /* LICENSE.markdown */,
+				ABBB21BC2C0952E80019AA9C /* README.markdown */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,7 +151,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1540;
 				ORGANIZATIONNAME = "Gee Dbl A";
 				TargetAttributes = {
 					AB2EE07522F4EA6000498720 = {
@@ -199,6 +199,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -260,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

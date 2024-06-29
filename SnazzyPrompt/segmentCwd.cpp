@@ -15,10 +15,11 @@
 
 void segmentCwd(int argc, const char** argv, options_t& options, segment_t& segment)
 {
-	struct passwd*														pw		= getpwuid(getuid());
-	std::string															homeDir = pw->pw_dir;
+	struct passwd*	pw		= getpwuid(getuid());
+	std::string		homeDir = pw->pw_dir;
 
-	struct knownDir_t { std::string symbol; std::string directory; }	knownDirectories[] = {
+	struct knownDir_t { std::string symbol; std::string directory; }
+			knownDirectories[] = {
 		{ std::string("􀣰"), std::string(homeDir + "/Desktop")	},
 		{ std::string("􀈷"), std::string(homeDir + "/Documents") },
 		{ std::string("􀤨"), std::string(homeDir + "/Library")	},
@@ -30,10 +31,10 @@ void segmentCwd(int argc, const char** argv, options_t& options, segment_t& segm
 		{ std::string(""), std::string(homeDir + "/Sites")		},
 
 		// bottom of the list on purpoae
-		{ std::string(""), std::string(homeDir)				},
+		{ std::string("🏠"), std::string(homeDir)				},
 	};
 
-	char																dir[PATH_MAX];
+	char	dir[PATH_MAX];
 
 	getcwd(dir, PATH_MAX);
 	char* p = dir;
@@ -42,7 +43,7 @@ void segmentCwd(int argc, const char** argv, options_t& options, segment_t& segm
 		segment.text		= "";
 		segment.foreground	= options.alternateForeground;
 		segment.background	= options.alternateBackground;
-	}else {
+	} else {
 		segment.foreground	= options.foreground;
 		segment.background	= options.background;
 		for (int i = 0; i < sizeof(knownDirectories) / sizeof(knownDir_t); i++) {

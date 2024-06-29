@@ -29,7 +29,7 @@ bool getOptions(std::vector<std::string>& selected)
 
 	if (env == NULL) {
 		optionsText = "cwd,235,45,235,166;git,235,219,235,156;error,235,166";
-	}else {
+	} else {
 		optionsText = env;
 	}
 
