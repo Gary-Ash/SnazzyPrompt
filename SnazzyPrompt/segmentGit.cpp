@@ -103,7 +103,7 @@ void segmentGit(int argc, const char** argv, options_t& options, segment_t& segm
 			}
 			segment.foreground	= options.foreground;
 			segment.background	= options.background;
-		}else {
+		} else {
 			segment.foreground	= options.alternateForeground;
 			segment.background	= options.alternateBackground;
 			segment.text.append("✓");
@@ -138,9 +138,9 @@ static void gatherRemoteStats(git_repository* repo, git_reference* head, git_str
 	const char* url = git_remote_url(remote);
 	if (strstr(url, "github.com")) {
 		remoteHost = "";
-	}else if (strstr(url, "gitlab.com")) {
+	} else if (strstr(url, "gitlab.com")) {
 		remoteHost = "";
-	}else if (strstr(url, "bitbucket")) {
+	} else if (strstr(url, "bitbucket")) {
 		remoteHost = "";
 	}
 	git_remote_free(remote);

@@ -11,6 +11,7 @@
  ****************************************************************************************/
 #ifndef __SNAZZY_PROMPT_INCLUDED__
 #define __SNAZZY_PROMPT_INCLUDED__
+
 /*****************************************************************************************
  * system include files
  ****************************************************************************************/
@@ -21,24 +22,32 @@
 #include <climits>
 #include <locale>
 #include <codecvt>
+
 /*****************************************************************************************
  * segment data structure
  ****************************************************************************************/
 struct options_t;
 struct segment_t;
 typedef void (* segmentFunction)(int argc, const char** argv, options_t& options, segment_t& segment);
-struct options_t { unsigned int		defaultForeground;
-				   unsigned int		defaultBackground;
-				   unsigned int		defaultAlternateForeground;
-				   unsigned int		defaultAlternateBackground;
-				   unsigned int		foreground;
-				   unsigned int		background;
-				   unsigned int		alternateForeground;
-				   unsigned int		alternateBackground;
-				   segmentFunction	functionPointer; };
-struct segment_t { std::string	text;
-				   unsigned int foreground;
-				   unsigned int background; };
+
+struct options_t {
+	unsigned int	defaultForeground;
+	unsigned int	defaultBackground;
+	unsigned int	defaultAlternateForeground;
+	unsigned int	defaultAlternateBackground;
+	unsigned int	foreground;
+	unsigned int	background;
+	unsigned int	alternateForeground;
+	unsigned int	alternateBackground;
+	segmentFunction functionPointer;
+};
+
+struct segment_t {
+	std::string		text;
+	unsigned int	foreground;
+	unsigned int	background;
+};
+
 /*****************************************************************************************
  * function prototypes
  ****************************************************************************************/
@@ -55,4 +64,5 @@ void    appendSpaceAsNeeded(std::string& str);
  ****************************************************************************************/
 extern std::map<std::string, options_t>								supportedSegments;
 extern std::wstring_convert<std::codecvt_utf8<char32_t>, char32_t>	converter;
+
 #endif

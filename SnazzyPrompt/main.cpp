@@ -37,7 +37,7 @@ int main(int argc, const char* argv[])
 	if (strstr(shell, "zsh")) {
 		openBracket		= "\%{";
 		closingBracket	= "\%}";
-	}else if (strstr(shell, "bash")) {
+	} else if (strstr(shell, "bash")) {
 		openBracket		= "\\[";
 		closingBracket	= "\\]";
 	}
@@ -56,11 +56,13 @@ int main(int argc, const char* argv[])
 			segment_t	segment;
 			options_t	options = supportedSegments[selectedSegment];
 			options.functionPointer(argc, argv, options, segment);
+
 			if (!segment.text.empty()) {
 				++count;
 				segments.push_back(segment);
 			}
 		}
+
 		if (count > 0) {
 			prompt.append(openBracket);
 			prompt.append(bold);
