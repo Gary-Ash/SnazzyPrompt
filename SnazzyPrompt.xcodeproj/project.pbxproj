@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB1A67B029D0FE15009AC111 /* libiconv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A67AF29D0FDBA009AC111 /* libiconv.tbd */; };
+		AB1A67B229D0FEBC009AC111 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AB1A67B129D0FE91009AC111 /* libz.tbd */; };
+		AB2EE07A22F4EA6000498720 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE07922F4EA6000498720 /* main.cpp */; };
+		AB2EE08722F4EB2900498720 /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE08022F4EB2900498720 /* options.cpp */; };
+		AB2EE08822F4EB2900498720 /* segmentGit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE08222F4EB2900498720 /* segmentGit.cpp */; };
+		AB2EE08922F4EB2900498720 /* segmentError.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE08322F4EB2900498720 /* segmentError.cpp */; };
+		AB2EE08A22F4EB2900498720 /* segmentMachine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE08422F4EB2900498720 /* segmentMachine.cpp */; };
+		AB2EE08B22F4EB2900498720 /* segmentUser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE08522F4EB2900498720 /* segmentUser.cpp */; };
+		AB2EE08C22F4EB2900498720 /* segmentCwd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB2EE08622F4EB2900498720 /* segmentCwd.cpp */; };
+		AB2EE08F22F4EB7000498720 /* libtermcap.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2EE08E22F4EB7000498720 /* libtermcap.tbd */; };
+		ABBAE7BE2B48F43300E1994E /* libgit2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2DE4FF249959E000F25CE8 /* libgit2.a */; };
+		ABE67A2923B1A89D004BAB20 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE67A2823B1A89D004BAB20 /* Security.framework */; };
+		ABE67A2B23B1A8BD004BAB20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE67A2A23B1A8BD004BAB20 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB2EE07422F4EA6000498720 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB1A67AF29D0FDBA009AC111 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		AB1A67B129D0FE91009AC111 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AB2DE4FF249959E000F25CE8 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = libgit2/build/libgit2.a; sourceTree = "<group>"; };
+		AB2EE07622F4EA6000498720 /* SnazzyPrompt */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SnazzyPrompt; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB2EE07922F4EA6000498720 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		AB2EE08022F4EB2900498720 /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = options.cpp; sourceTree = "<group>"; };
+		AB2EE08122F4EB2900498720 /* snazzy-prompt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "snazzy-prompt.h"; sourceTree = "<group>"; };
+		AB2EE08222F4EB2900498720 /* segmentGit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmentGit.cpp; sourceTree = "<group>"; };
+		AB2EE08322F4EB2900498720 /* segmentError.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmentError.cpp; sourceTree = "<group>"; };
+		AB2EE08422F4EB2900498720 /* segmentMachine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmentMachine.cpp; sourceTree = "<group>"; };
+		AB2EE08522F4EB2900498720 /* segmentUser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmentUser.cpp; sourceTree = "<group>"; };
+		AB2EE08622F4EB2900498720 /* segmentCwd.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = segmentCwd.cpp; sourceTree = "<group>"; };
+		AB2EE08E22F4EB7000498720 /* libtermcap.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libtermcap.tbd; path = usr/lib/libtermcap.tbd; sourceTree = SDKROOT; };
+		AB4AB7FA284E56A40081CAC2 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = ../../../../../opt/homebrew/Cellar/libgit2/1.4.3/lib/libgit2.a; sourceTree = "<group>"; };
+		AB4AB7FB284E57530081CAC2 /* libgit2.1.4.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgit2.1.4.3.dylib; path = ../../../../../opt/homebrew/Cellar/libgit2/1.4.3/lib/libgit2.1.4.3.dylib; sourceTree = "<group>"; };
+		AB7676992A328E4D00857DF8 /* libgit2.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libgit2.a; path = ../../../../../opt/homebrew/Cellar/libgit2/1.6.4/lib/libgit2.a; sourceTree = "<group>"; };
+		ABBB21BC2C0952E80019AA9C /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		ABBB21BD2C0952E80019AA9C /* LICENSE.markdown */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.markdown; sourceTree = "<group>"; };
+		ABE67A2823B1A89D004BAB20 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ABE67A2A23B1A8BD004BAB20 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB2EE07322F4EA6000498720 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2EE08F22F4EB7000498720 /* libtermcap.tbd in Frameworks */,
+				AB1A67B229D0FEBC009AC111 /* libz.tbd in Frameworks */,
+				ABE67A2923B1A89D004BAB20 /* Security.framework in Frameworks */,
+				ABE67A2B23B1A8BD004BAB20 /* Foundation.framework in Frameworks */,
+				AB1A67B029D0FE15009AC111 /* libiconv.tbd in Frameworks */,
+				ABBAE7BE2B48F43300E1994E /* libgit2.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB2EE06D22F4EA6000498720 = {
+			isa = PBXGroup;
+			children = (
+				AB2EE07822F4EA6000498720 /* SnazzyPrompt */,
+				AB2EE07722F4EA6000498720 /* Products */,
+				AB2EE08D22F4EB7000498720 /* Frameworks */,
+				ABBB21BD2C0952E80019AA9C /* LICENSE.markdown */,
+				ABBB21BC2C0952E80019AA9C /* README.markdown */,
+			);
+			sourceTree = "<group>";
+		};
+		AB2EE07722F4EA6000498720 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB2EE07622F4EA6000498720 /* SnazzyPrompt */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB2EE07822F4EA6000498720 /* SnazzyPrompt */ = {
+			isa = PBXGroup;
+			children = (
+				AB2EE07922F4EA6000498720 /* main.cpp */,
+				AB2EE08022F4EB2900498720 /* options.cpp */,
+				AB2EE08622F4EB2900498720 /* segmentCwd.cpp */,
+				AB2EE08322F4EB2900498720 /* segmentError.cpp */,
+				AB2EE08222F4EB2900498720 /* segmentGit.cpp */,
+				AB2EE08422F4EB2900498720 /* segmentMachine.cpp */,
+				AB2EE08522F4EB2900498720 /* segmentUser.cpp */,
+				AB2EE08122F4EB2900498720 /* snazzy-prompt.h */,
+			);
+			path = SnazzyPrompt;
+			sourceTree = "<group>";
+		};
+		AB2EE08D22F4EB7000498720 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB7676992A328E4D00857DF8 /* libgit2.a */,
+				AB1A67B129D0FE91009AC111 /* libz.tbd */,
+				AB1A67AF29D0FDBA009AC111 /* libiconv.tbd */,
+				AB4AB7FB284E57530081CAC2 /* libgit2.1.4.3.dylib */,
+				AB2DE4FF249959E000F25CE8 /* libgit2.a */,
+				AB4AB7FA284E56A40081CAC2 /* libgit2.a */,
+				ABE67A2A23B1A8BD004BAB20 /* Foundation.framework */,
+				ABE67A2823B1A89D004BAB20 /* Security.framework */,
+				AB2EE08E22F4EB7000498720 /* libtermcap.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB2EE07522F4EA6000498720 /* SnazzyPrompt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB2EE07D22F4EA6000498720 /* Build configuration list for PBXNativeTarget "SnazzyPrompt" */;
+			buildPhases = (
+				AB2EE07222F4EA6000498720 /* Sources */,
+				AB2EE07322F4EA6000498720 /* Frameworks */,
+				AB2EE07422F4EA6000498720 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnazzyPrompt;
+			productName = "snazzy-prompt";
+			productReference = AB2EE07622F4EA6000498720 /* SnazzyPrompt */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB2EE06E22F4EA6000498720 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1540;
+				ORGANIZATIONNAME = "Gee Dbl A";
+				TargetAttributes = {
+					AB2EE07522F4EA6000498720 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+				};
+			};
+			buildConfigurationList = AB2EE07122F4EA6000498720 /* Build configuration list for PBXProject "SnazzyPrompt" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB2EE06D22F4EA6000498720;
+			productRefGroup = AB2EE07722F4EA6000498720 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB2EE07522F4EA6000498720 /* SnazzyPrompt */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB2EE07222F4EA6000498720 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB2EE08B22F4EB2900498720 /* segmentUser.cpp in Sources */,
+				AB2EE08722F4EB2900498720 /* options.cpp in Sources */,
+				AB2EE08822F4EB2900498720 /* segmentGit.cpp in Sources */,
+				AB2EE08C22F4EB2900498720 /* segmentCwd.cpp in Sources */,
+				AB2EE08A22F4EB2900498720 /* segmentMachine.cpp in Sources */,
+				AB2EE08922F4EB2900498720 /* segmentError.cpp in Sources */,
+				AB2EE07A22F4EA6000498720 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AB2EE07B22F4EA6000498720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AB2EE07C22F4EA6000498720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AB2EE07E22F4EA6000498720 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H46K66JBHS;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(PROJECT_DIR)/libgit2/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					"$(PROJECT_DIR)/libgit2/build",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		AB2EE07F22F4EA6000498720 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				DEAD_CODE_STRIPPING = YES;
+				DEVELOPMENT_TEAM = H46K66JBHS;
+				HEADER_SEARCH_PATHS = (
+					/opt/homebrew/include,
+					"$(PROJECT_DIR)/libgit2/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/opt/homebrew/lib,
+					"$(PROJECT_DIR)/libgit2/build",
+				);
+				LLVM_LTO = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB2EE07122F4EA6000498720 /* Build configuration list for PBXProject "SnazzyPrompt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2EE07B22F4EA6000498720 /* Debug */,
+				AB2EE07C22F4EA6000498720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB2EE07D22F4EA6000498720 /* Build configuration list for PBXNativeTarget "SnazzyPrompt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB2EE07E22F4EA6000498720 /* Debug */,
+				AB2EE07F22F4EA6000498720 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB2EE06E22F4EA6000498720 /* Project object */;
+}
