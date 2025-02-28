@@ -24,3 +24,21 @@ Untracked                  f059
 Conflicts                  f057
 Stashed                    f01c
 
+#define RGBA(r, g, b, a) ((r & 0xFF) << 24 | (g & 0xFF) << 16 | (b & 0xFF) << 8 | (a & 0xFF))
+
+u8 red = (color & 0xFF000000) >> 24;
+u8 green = (color & 0x00FF0000) >> 16;
+u8 blue = (color & 0x0000FF00) >> 8;
+
+void extractRGBA(uint32_t color, uint8_t &r, uint8_t &g, uint8_t &b, uint8_t &a) {
+    r = (color >> 24) & 0xFF; // Extract the red component
+    g = (color >> 16) & 0xFF; // Extract the green component
+    b = (color >> 8) & 0xFF;  // Extract the blue component
+    a = color & 0xFF;         // Extract the alpha component
+}
+
+38;2;r;g;b	Set text colour to an RGB value (e.g. \x1b[38;2;255;255;0m)
+48;2;r;g;b	Set background colour to an RGB value
+
+38;5;n	Set text colour to index n in a 256-colour palette (e.g. \x1b[38;5;34m)
+48;5;n	Set background colour to index n in a 256-colour palette
